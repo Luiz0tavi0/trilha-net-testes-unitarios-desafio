@@ -4,19 +4,19 @@ namespace TestesUnitarios.Desafio.Console.Services
     {
         public int RetornarQuantidadeCaracteres(string texto)
         {
-            var numeroCaracteres = texto.Length;
+            int numeroCaracteres = texto.Length;
             return numeroCaracteres;
         }
 
         public bool ContemCaractere(string texto, string textoProcurado)
         {
-            var contem = texto.Contains(textoProcurado);
+            bool contem = texto.Contains(textoProcurado);
             return contem;
         }
 
         public bool TextoTerminaCom(string texto, string textoProcurado)
         {
-            var termina = texto.EndsWith(textoProcurado);
+            bool termina = texto.EndsWith(textoProcurado);
             return termina;
         }
     }
